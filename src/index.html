@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная</title><!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>   
+    <header class="page-header">
+      <div class="container">
+        <div class="page-header__inner">         <a class="page-header__logo" href="/"><img src="img/logo.svg" width="200" height="39" alt="Лукойл-гарант"></a>
+          <h2 class="page-header__title">Сохраните<br>инвестиционный<br>доход!</h2>
+        </div>
+      </div>
+    </header>
+    <div class="page-main">
+      <div class="container">
+        <section class="profit">
+          <h2 class="profit__title">На размер Вашей накопительной пенсии влияет инвестиционный доход, который НПФ «ЛУКОЙЛ-ГАРАНТ» ежегодно начисляет на Ваш счет<sup>1</sup>.</h2>
+          <div class="profit__row">
+            <div class="profit__item profit__item--left"><span class="profit__val">8,22%</span>
+              <p class="profit__descr">доход от инвестирования пенсионных накоплений</p><span class="profit__footnote">В 2016<sup>2</sup></span>
+            </div>
+            <div class="profit__item profit__item--right"><span class="profit__val">175,1%</span>
+              <p class="profit__descr">Накопленная доходность фонда</p><span class="profit__footnote">C 2005 по 2016гг<sup>3</sup></span>
+            </div>
+          </div>
+          <h2 class="profit__title">Накопленная доходность</h2>
+          <p class="profit__text profit__text--center">распределенная на счета клиентов НПФ «ЛУКОЙЛ-ГАРАНТ» за 2009-2016 гг.<br> в сравнении с накопленной инфляцией и доходностью управляющей компании Внешэкономбанк (ВЭБ)  </p>
+          <div class="profit__diagram">
+            <canvas class="profit__canvas" id="profit__canvas"></canvas>
+            <div class="profit__legend">
+              <ul class="profit__list">
+                <li class="profit__list-item profit__list-item--red">Накопленная доходность НПФ <q>ЛУКОЙЛ-ГАРАНТ</q></li>
+                <li class="profit__list-item profit__list-item--light-grey">Накопленная инфляция</li>
+                <li class="profit__list-item profit__list-item--blue">Накопленная доходность ВЭБ</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__inner">
+          <div class="page-footer__footnotes">
+            <p class="page-footer__footnote"><sup>1 </sup>В случае положительного результата инвестирования. Возможно увеличение или уменьшение дохода от инвестирования пенсионных накоплений, результаты инвестирования в прошлом не определяют доходов в будущем. Государство не гарантирует доходности инвестирования пенсионных накоплений. Необходимо внимательно ознакомиться с Уставом Фонда и его Страховыми правилами перед переводом пенсионных накоплений в Фонд.</p>
+            <p class="page-footer__footnote"><sup>2 </sup>По данным Банка России на 31.12.2016.</p>
+            <p class="page-footer__footnote"><sup>3 </sup>Накопленная доходность указана согласно внутренним расчетам НПФ «ЛУКОЙЛ-ГАРАНТ».</p>
+            <p class="page-footer__footnote"><sup>4 </sup>Начисленный инвестиционный доход не сохраняется при переходе застрахованного лица из одного негосударственного пенсионного фонда в другой негосударственный пенсионный фонд или Пенсионный фонд Российской Федерации на основании заявления застрахованного лица о досрочном переходе, поданного до истечения 4-летнего срока с года вступления в силу договора об обязательном пенсионном страховании с фондом (ст. 36.6-1 Федерального закона от 07.05.1998  № 75-ФЗ «О негосударственных пенсионных фондах»).</p>
+          </div>
+          <p class="page-footer__text">Получить подробную информацию об АО «НПФ «ЛУКОЙЛ-ГАРАНТ» можно по адресу: ул. Гиляровского, д. 39, стр. 3, Москва, 129110 или на сайте <a href="www.lukoil-garant.ru">www.lukoil-garant.ru</a></p>
+          <p class="page-footer__text">Лицензия Банка России №432 от 20.05.2014, бессрочная.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

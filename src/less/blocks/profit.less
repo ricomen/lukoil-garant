@@ -1,0 +1,151 @@
+.profit {
+  background-color: #fff;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 52px 60px;
+  @media @small {
+    padding: 30px 15px;
+  }    
+  
+  &__title {
+    margin: 0 -15px;
+    margin-right: -25px;
+    font-size: 28px;
+    line-height: 1.31;
+    font-weight: 600;
+    text-align: center;
+    @media @tablet {
+      margin: 0;
+    }
+    @media @small {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }//title
+
+  &__row {
+    font-size: 0;
+    margin: 50px 0 70px;
+    padding: 33px 30px 54px;
+    box-sizing: border-box;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    .clearfix;
+    @media @small {
+      margin: 32px 0 22px;
+      padding: 22px 0 16px;
+    }
+  }
+
+  &__item {
+    width: 46%;
+    padding-left: 10px;
+    @media @small {        
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    &--left {
+      float: left;
+      @media @phone {
+        float: none;
+      }
+    }
+    &--right {
+      float: right;
+      @media @phone {
+        float: none;
+      }
+    }
+  }//item
+
+  &__val {    
+    font-size: 100px;
+    line-height: 1.05;
+    font-weight: bold;
+    letter-spacing: -5px;
+    color: #cf456c;
+    @media @phone {
+      font-size: 72px;
+    }    
+  }//val
+
+  &__descr {
+    margin: 7px 0;
+    font-size: 20px;
+    line-height: 1.08;
+    font-weight: bold;
+    letter-spacing: -0.1px;
+    text-transform: uppercase;      
+    @media @small {
+      font-size: 16px;        
+    }
+  }//descr
+
+  &__footnote {
+    font-size: 11px;
+  }
+  &__text {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.42;
+    @media @small {
+      font-size: 12px;      
+    }
+    &--center {
+      text-align: center;
+    }
+  }//text
+
+  &__diagram {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  &__canvas {
+    margin-bottom: 20px;
+  }
+
+  &__legend {
+    position: absolute;    
+    left: 55px;
+    top: 0px;    
+    @media @small {
+      position: static;      
+    }    
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;        
+  &-item {
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #000;
+    @media @small {
+      font-size: 11px;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 50%;
+      margin-top: -4.5px;
+      width: 9px;
+      height: 9px;      
+      border-radius: 50%;
+    }
+    &--red::before {
+      background: #cf456c;
+    }
+    &--light-grey::before {
+      background: #d3d8dc;
+    }
+    &--blue::before {
+      background: #3390d6;
+    }
+  }
+  }
+}

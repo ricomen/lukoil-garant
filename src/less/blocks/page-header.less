@@ -1,0 +1,55 @@
+.page-header {
+  position: relative;
+  background: url("../img/header-bg.jpg") no-repeat center bottom;
+  background-size: cover;
+  padding-top: 45px;
+  @media @small {
+    padding-top: 0;
+  }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../img/header-bg@2x.jpg") no-repeat center bottom;
+    background-size: cover;
+   }
+
+  &__inner {    
+    min-height: 610px;
+    box-sizing: border-box;
+    padding: 37px 60px;
+    background: url("../img/header-inner-bg.jpg") no-repeat center;
+    background-size: cover;
+    box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.25);
+    @media @small {
+      min-height: 240px;
+      padding: 20px 15px 0;
+    }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../img/header-inner-bg@2x.jpg") no-repeat center bottom;
+    background-size: cover;
+   }
+  }//inner
+
+  &__logo {
+    display: block;
+    img {
+      width: 200px;
+      height: 39px;
+      margin-bottom: 52px;
+      @media @small {
+        margin-bottom: 32px;
+        width: 155px;
+        height: 30px;
+      }
+    }  
+  }//logo
+
+  &__title {
+    font-size: 48px;
+    line-height: 1;
+    color: #cf456c;    
+    @media @small {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+}
+
