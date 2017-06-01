@@ -1,6 +1,5 @@
 .profit {
-  background-color: #fff;
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  background-color: #fff;  
   padding: 52px 60px;
   @media @small {
     padding: 30px 15px;
@@ -34,7 +33,7 @@
       margin: 32px 0 22px;
       padding: 22px 0 16px;
     }
-  }
+  }//row
 
   &__item {
     width: 46%;
@@ -83,6 +82,7 @@
   &__footnote {
     font-size: 11px;
   }
+
   &__text {
     margin: 5px 0;
     font-size: 14px;
@@ -99,11 +99,11 @@
     margin-top: 70px;
     margin-bottom: 20px;
     position: relative;
-  }
+  }//diagram
 
   &__canvas {
     margin-bottom: 20px;
-  }
+  }//canvas
 
   &__legend {
     position: absolute;    
@@ -112,7 +112,7 @@
     @media @small {
       position: static;      
     }    
-  }
+  }//legend
 
   &__list {
     margin: 0;
@@ -136,16 +136,16 @@
       width: 9px;
       height: 9px;      
       border-radius: 50%;
-    }
-    &--red::before {
-      background: #cf456c;
-    }
-    &--light-grey::before {
-      background: #d3d8dc;
-    }
-    &--blue::before {
-      background: #3390d6;
-    }
-  }
-  }
+      }
+      &--red::before {
+        background: #cf456c;
+      }
+      &--light-grey::before {
+        background: #d3d8dc;
+      }
+      &--blue::before {
+        background: #3390d6;
+      }
+    }//item
+  }//list
 }
