@@ -5,4 +5,58 @@
   &--tablet {
     background: data-uri("../img/icons/tablet.png") no-repeat center;
   }
+  &--files {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -29px;
+    background: #55a2da;
+    &::after {
+      position: absolute;
+      content: "";
+      margin-top: -15px;
+      margin-left: -13px;
+      top: 50%;
+      left: 50%;
+      width: 26px;
+      height: 30px;
+      background:  data-uri("../img/icons/docs.svg") no-repeat center;
+    }
+  }
+  &--file {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -29px;
+    background: #bfc5ca;
+    &::after {
+      position: absolute;
+      content: "";
+      margin-top: -13px;
+      margin-left: -12px;
+      top: 50%;
+      left: 50%;
+      width: 30px;
+      height: 30px; 
+      background:  data-uri("../img/icons/doc.svg") no-repeat center;
+    }
+  }
+  &--checked {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -29px;
+    background: #f58ca7 ;
+    &::after {
+      position: absolute;
+      content: "";
+      margin-top: -15px;
+      margin-left: -15px;
+      top: 50%;
+      left: 50%;
+      width: 30px;
+      height: 30px;
+      background: data-uri("../img/icons/checked.svg") no-repeat center;
+    }
+  }
 }
