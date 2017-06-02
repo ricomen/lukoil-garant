@@ -1,8 +1,8 @@
 .profit {
   background-color: #fff;  
-  padding: 52px 60px;
+  padding: 52px 65px;
   @media @small {
-    padding: 30px 15px;
+    padding: 30px 15px 40px;
   }    
   
   &__title {
@@ -88,7 +88,8 @@
     font-size: 14px;
     line-height: 1.42;
     @media @small {
-      font-size: 12px;      
+      font-size: 12px;  
+      line-height: 1.6;   
     }
     &--center {
       text-align: center;
@@ -96,19 +97,35 @@
   }//text
 
   &__diagram {
-    margin-top: 70px;
-    margin-bottom: 20px;
+    margin-top: 30px;    
     position: relative;
-  }//diagram
-
-  &__canvas {
-    margin-bottom: 20px;
-  }//canvas
+    @media @small {
+      margin-top: 52px;
+    }
+    &-img {
+      text-align: center;
+      @media @small {
+        margin-bottom: 34px;
+      }    
+    }
+    &-lg {
+      @media @small {
+        display: none;
+      }
+    }
+    &-sm {
+      display: none;
+      @media @small {
+        display: block;
+        .center;
+      }
+    }    
+  }//diagram 
 
   &__legend {
     position: absolute;    
-    left: 55px;
-    top: 0px;    
+    left: 5.5%;
+    top: 40px;    
     @media @small {
       position: static;      
     }    
@@ -124,6 +141,9 @@
     padding-left: 15px;
     font-size: 14px;
     color: #000;
+    &:last-child {
+      margin-bottom: 0;
+    }
     @media @small {
       font-size: 11px;
     }

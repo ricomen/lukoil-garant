@@ -5,6 +5,9 @@
     padding: 45px 60px 64px;
     border-top: 1px solid #eaeaea;
     border-bottom: 1px solid #eaeaea;
+    @media @small {
+      padding: 20px 15px;
+    }
   }
 
   &__title {
@@ -15,6 +18,11 @@
     letter-spacing: -0.6px;
     sup {
       font-size: 15px;
+    }
+    @media @small {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 8px;
     }
     &--red {
       color: #cf456c;
@@ -31,6 +39,12 @@
     font-size: 14px;
     line-height: 1.45;
     letter-spacing: 0.05px;
+    @media @small {
+      font-size: 12px;
+      margin: 8px 0;
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
   }
 
   &__row {
@@ -40,17 +54,25 @@
     padding: 0 10px;
     font-size: 0;
     box-sizing: border-box;
+    @media @small {
+      margin-top: 44px;      
+    }
 
   }//row
 
-  &__item {
-    display: inline-block;
-    vertical-align: top;
-    // margin: 0 3.95%;
+  &__item {    
     width: 45%;
     font-size: 16px;
     text-align: center;
     box-sizing: border-box;
+    @media @small {
+      float: none;      
+      width: 100%;
+      margin-bottom: 38px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     &-title {
       position: relative;
       display: block;
@@ -72,6 +94,10 @@
     &-descr {
       font-size: 13px;
       line-height: 1.4;
+      @media @small {
+        font-size: 11px;
+        line-height: 1.7;
+      }
     }
   }
 

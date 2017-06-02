@@ -19,7 +19,9 @@
         h2.profit__title Накопленная доходность
         p.profit__text.profit__text--center распределенная на счета клиентов НПФ «ЛУКОЙЛ-ГАРАНТ» за 2009-2016 гг.<br> в сравнении с накопленной инфляцией и доходностью управляющей компании Внешэкономбанк (ВЭБ)  
         .profit__diagram
-          canvas#profit__canvas.profit__canvas
+          .profit__diagram-img
+            img(src="img/graphic@1x.jpg" alt="Диаграмма доходности").profit__diagram-lg
+            img(src="img/graphic-small.jpg", alt="Диаграмма доходности").profit__diagram-sm
           .profit__legend
             ul.profit__list
               li.profit__list-item.profit__list-item--red Накопленная доходность НПФ <q>ЛУКОЙЛ-ГАРАНТ</q>
@@ -50,16 +52,13 @@
           p.account__descr Воспользуйтесь новыми онлайн-сервисами
           .account__row
             .account__item
-              b.account__item-title
-                i.icon.icon--files.account__item-icon
+              i.icon.icon--files.account__item-icon
               a(href="#").account__link Запросите копии<br>необходимых документов
             .account__item
-              b.account__item-title
-                i.icon.icon--file.account__item-icon
+              i.icon.icon--file.account__item-icon
               a(href="#").account__link Подайте заявление на выплату накопительной пенсии
             .account__item
-              b.account__item-title
-                i.icon.icon--checked.account__item-icon
+              i.icon.icon--checked.account__item-icon
               a(href="#").account__link Обновите<br>личные сведения 
       section.support
         .support__inner

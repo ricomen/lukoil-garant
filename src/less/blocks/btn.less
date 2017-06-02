@@ -9,9 +9,14 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition: 0.25s;
   &--green {
     color: #58621b;
-    background: #c1d548;
+    background: #c1d548;    
+    &:hover,
+    &:active {
+      background: darken(#c1d548, 10%)
+    }
   }
   &--full {
     width: 100%;    
